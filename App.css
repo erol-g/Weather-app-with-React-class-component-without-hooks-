@@ -1,0 +1,21 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+.app-wrap {
+	text-align: center;
+	background-image: url("./images/mcr-citysuites.jpg");
+	background-size: cover;
+	background-position: bottom center;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	padding-top: 200px;
+}
+
+.date {
+	margin: 10px;
+	font-weight: bolder;
+}

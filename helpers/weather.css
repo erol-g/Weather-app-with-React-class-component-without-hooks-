@@ -1,0 +1,64 @@
+html {
+    box-sizing: border-box;
+}
+
+*,*:after,*:before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.app-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+} 
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 50px;
+
+}
+
+header input {
+    width: 100%;
+    max-width: 250px;
+    border:none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 3px;
+    transition: 0.5 ease-out;
+}
+
+header input:focus {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+main {
+    /*flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;*/
+    flex:1 1 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.city {
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.temperature {
+    font-size: 100px;
+}
